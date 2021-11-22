@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL = parse_url(env('POSTGRES_URL'));
+//$DATABASE_URL = parse_url(env('POSTGRES_URL'));
 
 return [
 
@@ -64,7 +64,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
-
+/*
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
@@ -79,6 +79,7 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
+*/
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',

@@ -188,9 +188,10 @@ const Edit = () => {
                             onChange={handleChange}
                         >
                             <option></option>
+                            <option value="0">Tolak</option>
                             <option value="1" disabled>Menunggu Persetujuan</option>
                             <option value="2">Setujui</option>
-                            <option value="3">Tolak</option>
+
                         </SelectInput>
                         <SelectInput
                             className="pr-6 pb-8 w-full lg:w-1/3"

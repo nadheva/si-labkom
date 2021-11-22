@@ -1,6 +1,7 @@
 @extends('User.app')
 
 @section('title', '| Home')
+<meta name="viewport" content="width=device-width, initial-scale=1">
 @section('content')
     @if (session()->exists('success'))
         <div id="contact" data-name="{{ session('name') }}" data-success="{{ session('success') }}"></div>

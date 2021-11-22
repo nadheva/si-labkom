@@ -137,7 +137,10 @@ const Create = () => {
                             value={values.proses}
                         >
                             <option></option>
+                            <option value="0">Tolak</option>
                             <option value="1">Menunggu Persetujuan</option>
+                            <option value="2">Setujui</option>
+
                         </SelectInput>
                         <SelectInput
                             className="pr-6 pb-8 w-full lg:w-1/3"
@@ -149,6 +152,7 @@ const Create = () => {
                         >
                             <option></option>
                             <option value="0">Masih Dipinjam</option>
+                            <option value="1">Sudah Dikembalikan</option>
                         </SelectInput>
                         <div className="pr-6 pb-8 w-full lg:w-full">
                             <label className="form-label" htmlFor="keperluan">
